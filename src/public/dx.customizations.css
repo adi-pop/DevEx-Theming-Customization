@@ -1,0 +1,484 @@
+/* 
+ * BIT enhancements 
+ */
+.dx-theme-generic-typography,
+.dx-theme-generic-typography input,
+.dx-theme-generic-typography textarea,
+.dx-widget,
+.dx-widget input,
+.dx-widget textarea,
+.dx-field,
+.dx-field input,
+.dx-field textarea,
+.dx-field,
+.dx-overlay-wrapper,
+.dx-overlay-wrapper input,
+.dx-overlay-wrapper textarea,
+.dx-menu-base,
+.dx-menu-base input,
+.dx-menu-base textarea,
+.dx-datagrid-column-chooser,
+.dx-datagrid-column-chooser input,
+.dx-datagrid-column-chooser textarea,
+.dx-pivotgrid .dx-ie .dx-pivotgrid-fields-area,
+.dx-pivotgrid .dx-ie .dx-pivotgrid-fields-area input,
+.dx-pivotgrid .dx-ie .dx-pivotgrid-fields-area textarea {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.dx-header-row > td,
+.dx-datagrid-filter-row > td,
+.dx-datagrid .dx-row > td,
+.dx-pivotgrid .dx-pivotgrid-area td {
+  padding: min(max(calc(1rem * 0.31), 3px), 7px);
+  white-space: nowrap;
+  max-width: 300px;
+  line-height: 1.6;
+}
+.dx-datagrid-column-chooser
+  .dx-overlay-content
+  .dx-popup-title
+  .dx-toolbar-label {
+  font-size: 1rem;
+}
+.dx-datagrid .dx-header-filter,
+.dx-pivotgrid-fields-container .dx-header-filter,
+.dx-pivotgrid-fields-container .dx-sort-up,
+.dx-pivotgrid-fields-container .dx-sort-down,
+.dx-datagrid .dx-sort-up,
+.dx-datagrid .dx-sort-down {
+  font: 14px/1 DXIcons;
+}
+.dx-pivotgrid .dx-area-field.dx-area-box {
+  display: flex;
+  align-items: center;
+}
+.defaultHeightItem {
+  height: 42px;
+}
+.dx-toolbar {
+  width: 100%;
+  background-color: transparent;
+}
+/* 
+ * more enhancements (Adi)
+ */
+@font-face {
+  font-family: DXIcons;
+  src: url("icons/dxicons-bit.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.dx-dropdowneditor-active .dx-dropdowneditor-icon::before {
+  content: "\f002"; /* caret up */
+}
+.dx-treeview-toggle-item-visibility::before,
+.dx-datagrid-group-closed::before {
+  content: "\f010"; /* chevron right */
+  font-size: var(--font-size-small);
+}
+.dx-treeview-toggle-item-visibility.dx-treeview-toggle-item-visibility-opened::before,
+.dx-datagrid-group-opened::before {
+  content: "\f016"; /* chevron down */
+  font-size: var(--font-size-small);
+}
+/* grid general */
+.dx-datagrid-header-panel,
+.dx-datagrid-filter-row td,
+.dx-datagrid-filter-row .dx-texteditor-container,
+.dx-datagrid-filter-row .dx-texteditor .dx-texteditor-input {
+  background-color: var(--secondary-color-08);
+}
+.dx-datagrid-header-panel {
+  padding: 8px;
+  height: 50px;
+}
+.dx-datagrid-header-panel .dx-toolbar {
+  margin-bottom: 0;
+}
+.dx-popup-normal .dx-toolbar-label {
+  color: var(--primary-color); /* column chooser popup title */
+}
+.dx-datagrid-group-panel {
+  border: 1px dashed var(--secondary-color-32);
+  border-radius: 4px;
+  padding: 4px;
+}
+.dx-datagrid-group-panel .dx-group-panel-message {
+  padding: 0;
+}
+.dx-datagrid-group-panel .dx-group-panel-item,
+.dx-datagrid-group-panel .dx-block-separator {
+  background-color: var(--white);
+  padding: 4px 8px;
+  border-radius: var(--border-radius-small-shape);
+}
+
+.dx-group-panel-item,
+.dx-datagrid-headers .dx-datagrid-table .dx-row > td,
+.dx-datagrid-drag-header,
+.dx-datagrid-column-chooser
+  .dx-overlay-content
+  .dx-popup-content
+  .dx-column-chooser-item,
+.dx-field-item-label-text {
+  /*  font-variant-caps: all-small-caps;
+  letter-spacing: 1px;*/
+  font-size: var(--font-size-small);
+}
+.dx-datagrid-group-opened::before,
+.dx-datagrid-group-closed::before {
+  top: 2px;
+  left: 2px;
+}
+.dx-treeview-toggle-item-visibility::before,
+.dx-treeview-toggle-item-visibility.dx-treeview-toggle-item-visibility-opened::before {
+  margin-top: -5px;
+}
+/* icons & buttons customizations */
+.dx-button,
+.dx-button-normal,
+.dx-texteditor.dx-editor-outlined,
+.dx-calendar-navigator,
+.dx-popup-normal .dx-closebutton {
+  border-radius: var(--border-radius-small-shape);
+}
+.dx-selectbox.dx-dropdowneditor-button-visible,
+.dx-numberbox-spin {
+  overflow: hidden; /* indirectly round buttons in groups at margins*/
+}
+.dx-list-item .dx-button,
+.dx-datagrid-filter-range-overlay .dx-texteditor.dx-editor-outlined {
+  border-radius: 0;
+}
+.dx-numberbox-spin-button {
+  padding: 0;
+}
+.dx-field-item-label-text,
+.dx-searchbox .dx-icon-search::before {
+  color: var(--secondary-color);
+}
+.dx-searchbox.dx-state-hover .dx-icon-search::before {
+  color: var(--primary-color);
+}
+.dx-menu-item.dx-state-hover .dx-icon::before {
+  color: var(--primary-color);
+}
+.dx-popup-normal .dx-closebutton:hover,
+.dx-button {
+  background-color: var(--secondary-color-08);
+  border: none;
+}
+.dx-button-mode-contained.dx-state-hover,
+.dx-button-mode-contained.dx-state-hover .dx-button-text {
+  background-color: var(--secondary-color-08);
+}
+.dx-datagrid-header-panel .dx-button-mode-contained.dx-state-hover,
+.dx-datagrid-header-panel
+  .dx-button-mode-contained.dx-state-hover
+  .dx-button-text {
+  background-color: var(--secondary-color-16);
+}
+.dx-button-mode-contained.dx-state-hover .dx-icon,
+.dx-button-mode-contained.dx-state-hover .dx-button-text {
+  color: var(--primary-color);
+}
+.dx-button-mode-contained.dx-state-active,
+.dx-button-mode-contained.dx-state-focused {
+  background-color: var(--secondary-color-32);
+}
+.dx-button-mode-contained.dx-state-active .dx-icon,
+.dx-button-mode-contained.dx-state-focused .dx-icon {
+  color: var(--primary-color);
+}
+.dx-button-mode-contained.dx-state-active,
+.dx-button-mode-contained.dx-state-focused.dx-state-hover {
+  background-color: var(--secondary-color);
+}
+.dx-button-mode-contained.dx-state-active .dx-icon,
+.dx-button-mode-contained.dx-state-focused.dx-state-hover .dx-icon,
+.dx-button-mode-contained.dx-state-active .dx-button-text {
+  color: var(--white);
+}
+.dx-button-mode-text.dx-state-hover {
+  background-color: var(--secondary-color-16);
+}
+.dx-button-mode-text.dx-state-hover .dx-icon {
+  color: var(--primary-color);
+}
+.dx-popup-normal .dx-closebutton:active,
+.dx-button-mode-text.dx-state-active,
+.dx-button-mode-text.dx-state-focused {
+  background-color: var(--secondary-color) !important;
+}
+.dx-popup-normal .dx-closebutton:active,
+.dx-button-mode-text.dx-state-active .dx-icon,
+.dx-button-mode-text.dx-state-focused .dx-icon {
+  color: var(--white) !important;
+}
+.dx-texteditor-buttons-container .dx-icon {
+  color: var(--secondary-color-16);
+}
+.dx-state-hover .dx-texteditor-buttons-container .dx-icon,
+.dx-texteditor-buttons-container .dx-icon:hover {
+  color: var(--secondary-color);
+}
+.dx-state-focused .dx-texteditor-buttons-container .dx-icon,
+.dx-texteditor-buttons-container .dx-icon:active,
+.dx-texteditor-buttons-container .dx-icon:focus {
+  color: var(--primary-color);
+}
+.dx-field-item-content .dx-datebox-calendar .dx-dropdowneditor-icon,
+.dx-dropdowneditor-button,
+.dx-dropdowneditor-icon {
+  background-color: transparent;
+  border-radius: var(--border-radius-small-shape);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+}
+.dx-dropdowneditor-button .dx-dropdowneditor-icon,
+.dx-popup-title .dx-closebutton {
+  color: var(--secondary-color-16);
+  background-color: transparent;
+  border: none;
+}
+.dx-datagrid-filter-row
+  .dx-datebox-calendar.dx-state-hover
+  .dx-dropdowneditor-icon {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+.dx-dropdowneditor.dx-state-hover .dx-dropdowneditor-icon {
+  color: var(--secondary-color);
+}
+.dx-datagrid-filter-row .dx-datebox-calendar .dx-dropdowneditor-icon {
+  color: var(--secondary-color-08);
+}
+.dx-popup-title .dx-closebutton:hover,
+.dx-dropdowneditor.dx-dropdowneditor-active .dx-dropdowneditor-icon,
+.dx-dropdowneditor.dx-state-focused .dx-dropdowneditor-icon,
+.dx-dropdowneditor.dx-state-hover .dx-dropdowneditor-icon:hover,
+.dx-dropdowneditor .dx-dropdowneditor-icon:hover {
+  background-color: var(--secondary-color-16);
+  color: var(--primary-color);
+}
+
+.dx-calendar-navigator {
+  height: 34px;
+}
+.dx-calendar-cell {
+  width: 32px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: var(--font-size-small);
+}
+.dx-calendar-caption-button {
+  background-color: var(--white);
+}
+.dx-calendar-navigator .dx-calendar-caption-button.dx-button.dx-state-active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.dx-calendar-navigator .dx-calendar-caption-button,
+.dx-calendar-body thead tr th {
+  font-weight: normal;
+  text-transform: none;
+  box-shadow: none;
+}
+.dx-calendar-today,
+.dx-calendar-contoured-date {
+  color: var(--primary-color);
+}
+.dx-calendar-cell.dx-state-hover {
+  color: var(--secondary-color);
+}
+.dx-calendar-selected-date,
+.dx-calendar-selected-date.dx-state-hover {
+  color: var(--white);
+}
+.dx-timeview-clock {
+  background: url(images/clock-face.svg) 50% 50% no-repeat,
+    url(images/clock-hours.svg) 50% 50% no-repeat;
+}
+.dx-timeview-minutearrow,
+.dx-timeview-hourarrow {
+  filter: var(--secondary-filter);
+}
+
+.dx-state-hover.dx-numberbox-spin-button .dx-numberbox-spin-down-icon,
+.dx-state-hover.dx-numberbox-spin-button .dx-numberbox-spin-up-icon {
+  background-color: var(--secondary-color-16);
+}
+.dx-state-active.dx-numberbox-spin-button .dx-numberbox-spin-down-icon,
+.dx-state-active.dx-numberbox-spin-button .dx-numberbox-spin-up-icon {
+  color: var(--white);
+}
+.dx-navigate-button {
+  color: var(--secondary-color);
+  font-size: var(--font-size);
+}
+.dx-navigate-button:hover {
+  color: var(--primary-color);
+}
+.dx-pager .dx-texteditor-input {
+  min-width: 34px !important;
+  padding: 7px !important;
+  text-align: center;
+}
+.dx-pager .dx-page-sizes .dx-page-size,
+.dx-pager .dx-pages .dx-page {
+  border-radius: var(--border-radius-small-shape);
+  padding: 5px;
+  min-width: 34px;
+  text-align: center;
+}
+.dx-pager .dx-page-sizes .dx-page-size.dx-selection,
+.dx-pager .dx-pages .dx-page.dx-selection {
+  color: var(--primary-color);
+  background-color: var(--secondary-color-16);
+}
+.dx-page-size:hover,
+.dx-page:hover {
+  background-color: var(--secondary-color-08);
+}
+.dx-page-size:active,
+.dx-page:active {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+.dx-datagrid-rowsview .dx-row:hover > td,
+.dx-datagrid-rowsview .dx-row-alt:hover > td {
+  background-color: var(--secondary-color-16);
+}
+.dx-checkbox.dx-state-focused .dx-checkbox-icon {
+  background-color: var(--white);
+  color: var(--secondary-color);
+}
+.dx-checkbox.dx-state-active .dx-checkbox-icon {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+.dx-checkbox-text {
+  white-space: nowrap;
+}
+.dx-header-row > td {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  height: 34px;
+}
+.dx-header-row > td > .dx-datagrid-text-content,
+.dx-header-row > td > .dx-column-indicators {
+  padding-top: 2px;
+}
+.dx-header-row > td > .dx-select-checkbox {
+  padding-top: 4px;
+}
+.dx-icon-filter-operation-default {
+  color: var(--secondary-color-32) !important;
+}
+.dx-datagrid td:hover,
+.dx-datagrid td:hover .dx-header-filter-empty {
+  color: var(--primary-color) !important;
+}
+.dx-sort,
+.dx-datagrid td:hover .dx-header-filter-empty:hover {
+  color: var(--primary-color) !important;
+}
+.dx-datagrid-summary-item,
+.dx-datagrid-rowsview .dx-row.dx-group-row {
+  font-weight: normal;
+}
+.dx-datagrid-header-panel .dx-apply-button.dx-state-hover {
+  background-color: var(--secondary-color-16);
+  border-color: none;
+}
+.dx-datagrid-header-panel .dx-apply-button {
+  background-color: var(--secondary-color-08);
+  border-color: none;
+}
+.dx-datagrid-header-panel .dx-apply-button .dx-icon {
+  color: var(--secondary-color);
+}
+
+.dx-datagrid-header-panel .dx-apply-button.dx-state-active,
+.dx-datagrid-header-panel .dx-apply-button.dx-state-focused {
+  background-color: var(--secondary-color);
+  border-color: none;
+}
+.dx-datagrid-header-panel .dx-apply-button.dx-state-active .dx-icon,
+.dx-datagrid-header-panel .dx-apply-button.dx-state-focused .dx-icon {
+  color: var(--white);
+}
+.dx-datagrid-rowsview .dx-row.dx-edit-row > td,
+.dx-editor-cell .dx-texteditor.dx-state-focused .dx-texteditor-input {
+  background-color: var(--white);
+}
+.dx-datagrid-filter-row .dx-dropdowneditor-button,
+.dx-edit-cell .dx-dropdowneditor-button {
+  border-radius: 0; /* do not apply the roundings here */
+}
+.dx-datagrid
+  .dx-datagrid-content
+  .dx-datagrid-table
+  .dx-row
+  .dx-command-edit-with-icons {
+  padding: 2px;
+}
+.dx-datagrid
+  .dx-datagrid-content
+  .dx-datagrid-table
+  .dx-row
+  .dx-command-edit-with-icons
+  .dx-link {
+  min-width: 26px;
+  height: 26px;
+  font-size: var(--font-size);
+  margin: 2px 0 0 0;
+  padding: 4px 0 0 0;
+}
+.dx-command-edit .dx-link {
+  display: none !important;
+}
+tr:hover .dx-command-edit .dx-link,
+tr.dx-edit-row .dx-command-edit .dx-link {
+  display: inline-block !important;
+  border-radius: var(--border-radius-small-shape);
+}
+.dx-link:hover {
+  background-color: var(--secondary-color-32);
+  color: var(--primary-color);
+}
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item .dx-icon {
+  color: var(--secondary-color);
+}
+.dx-list:not(.dx-list-select-decorator-enabled)
+  .dx-list-item.dx-state-active
+  .dx-button
+  .dx-icon,
+.dx-list:not(.dx-list-select-decorator-enabled)
+  .dx-list-item.dx-state-focused
+  .dx-button
+  .dx-icon {
+  color: var(--primary-color);
+}
+.dx-datagrid-revert-tooltip .dx-overlay-content {
+  background: transparent;
+  margin-left: -10px;
+}
+.dx-overlay-content .dx-revert-button {
+  transform: scale(75%);
+}
+.dx-datagrid-revert-tooltip .dx-revert-button .dx-button-content {
+  border-radius: var(--border-radius-small-shape);
+}
+.dx-datagrid-revert-tooltip .dx-revert-button .dx-icon-revert {
+  color: var(--white) !important;
+}
+.dx-datagrid-revert-tooltip .dx-revert-button.dx-state-hover .dx-button-content,
+.dx-datagrid-revert-tooltip
+  .dx-revert-button.dx-state-focused
+  .dx-button-content {
+  background-color: var(--secondary-color);
+}

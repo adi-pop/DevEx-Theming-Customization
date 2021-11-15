@@ -1,0 +1,32 @@
+.dx-device-generic {
+  padding: 20px 10px;
+  overflow: auto;
+}
+.caption {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid var(--primary-color);
+}
+.caption.no-border {
+  border: none;
+}
+.options {
+  padding: 10px;
+  background-color: var(--secondary-color-08);
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.option {
+  min-width: 20%;
+  display: inline-block;
+  margin: 10px 20px 0 0;
+  vertical-align: middle;
+}
+.option .dx-selectbox {
+  margin-right: 20px;
+}
+.option.down {
+  padding-top: 16px;
+}

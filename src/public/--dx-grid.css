@@ -1,0 +1,263 @@
+/* grid header panel */
+.dx-datagrid-header-panel,
+.dx-datagrid-headers {
+  border: none !important;
+}
+.dx-datagrid-header-panel {
+  background: rgba(2, 180, 204, 0.08); /* #e6f8fa secondaryColor.08 */
+  padding: 6px !important;
+}
+.dx-toolbar {
+  margin: 0 !important;
+  background: transparent !important;
+}
+.dx-group-panel-item,
+.dx-block-separator {
+  background-color: #fff !important;
+}
+.dx-group-panel-message,
+.dx-group-panel-item {
+  color: rgba(2, 180, 204, 1) !important; /* #02b4cc secondaryColor */
+}
+.dx-group-panel-item {
+  border: 1px solid #aee7ef !important; /* #aee7ef; secondaryColor.32 */
+  padding: 1px 10px 3px 20px !important;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 1px;
+  font-size: 125%;
+}
+.dx-group-panel-item .dx-header-filter.dx-header-filter-empty {
+  color: rgba(2, 180, 204, 0.32) !important; /* #aee7ef; secondaryColor.32 */
+}
+.dx-datagrid-group-panel .dx-sort,
+.dx-group-panel-item .dx-header-filter,
+.dx-group-panel-item .dx-header-filter-empty:hover {
+  color: rgba(2, 180, 204, 1) !important;
+}
+
+/* grid header */
+.dx-datagrid-headers table.dx-datagrid-table {
+  height: 44px;
+}
+.dx-header-row {
+  background: rgba(2, 180, 204, 1) !important; /* #02b4cc secondaryColor */
+}
+.dx-header-row > td {
+  border-bottom: 1px solid #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+  border-right-color: #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+  color: #fff !important;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 1px;
+  font-size: 125%;
+}
+.dx-header-row > td[colspan] {
+  border-bottom: 1px solid #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+}
+.dx-header-row .dx-sort {
+  color: #fff !important; /* white */
+}
+.dx-header-row .dx-header-filter.dx-header-filter-empty {
+  color: rgba(255, 255, 255, 0.32) !important; /* #aee7ef; secondaryColor.32 */
+}
+.dx-header-row .dx-header-filter,
+.dx-header-row .dx-header-filter-empty:hover {
+  color: #fff !important;
+}
+/* grid filter */
+.dx-datagrid-filter-row > td {
+  border-bottom: 1px solid #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+}
+.dx-datagrid-filter-row .dx-texteditor.dx-editor-outlined,
+.dx-datagrid-filter-row .dx-dropdowneditor-button,
+.dx-datagrid-filter-row .dx-datebox-calendar .dx-dropdowneditor-icon {
+  border-radius: 0 !important;
+}
+.dx-datagrid-filter-row .dx-menu {
+  top: 0 !important;
+  left: 0 !important;
+}
+.dx-menu-item-has-icon .dx-icon {
+  color: rgba(2, 180, 204, 0.32) !important; /* #aee7ef secondaryColor.32 */
+}
+.dx-datagrid-filter-row .dx-editor-cell .dx-editor-with-menu .dx-placeholder::before,
+.dx-datagrid-filter-row .dx-editor-cell .dx-editor-with-menu .dx-texteditor-input {
+  padding-left: 24px !important;
+}
+.dx-menu-item-has-icon.dx-state-hover .dx-icon,
+.dx-menu-item-has-icon.dx-menu-item-expanded .dx-icon {
+  color: rgba(2, 180, 204, 1) !important; /* #02b4cc secondaryColor */
+}
+.dx-datagrid-filter-row .dx-menu {
+  margin-left: -1px !important;
+  margin-top: -1px !important;
+}
+.dx-context-menu-container-border {
+  border: none !important;
+}
+.dx-context-menu-content-delimiter {
+  display: none !important;
+}
+.dx-context-menu .dx-submenu {
+  border-color: rgba(2, 180, 204, 0.32) !important; /* #aee7ef secondaryColor.32 */
+}
+.dx-context-menu .dx-menu-item-selected {
+  background-color: rgba(2, 180, 204, 0.32) !important; /* #aee7ef secondaryColor.32 */
+}
+.dx-context-menu .dx-menu-item.dx-state-hover {
+  background-color: rgba(2, 180, 204, 0.08) !important;
+}
+.dx-context-menu .dx-menu-item-selected .dx-icon {
+  color: rgba(0, 89, 128, 1) !important; /* #005980 primaryColor */
+}
+.dx-dropdowneditor .dx-dropdowneditor-icon {
+  color: #fff !important;
+}
+.dx-dropdowneditor.dx-state-active .dx-dropdowneditor-icon,
+.dx-dropdowneditor.dx-state-hover:not(.dx-custom-button-hovered) .dx-dropdowneditor-icon {
+  background-color: rgba(2, 180, 204, 0.08) !important;
+  color: rgba(0, 89, 128, 0.5) !important; /* #80ACBF primaryColor.5 */
+}
+.dx-dropdowneditor-active .dx-dropdowneditor-icon,
+.dx-dropdowneditor.dx-state-hover .dx-dropdowneditor-icon:hover {
+  background-color: rgba(2, 180, 204, 0.32) !important; /* #aee7ef secondaryColor.32 */
+  color: rgba(0, 89, 128, 1) !important; /* #005980 primaryColor */
+}
+
+/* rows view */
+.dx-datagrid-borders .dx-datagrid-rowsview,
+.dx-datagrid-headers + .dx-datagrid-rowsview {
+  border-top: none !important;
+}
+.dx-datagrid-borders .dx-datagrid-headers {
+  border-top: 1px solid #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+}
+.dx-datagrid-borders > .dx-datagrid-rowsview,
+.dx-datagrid-borders > .dx-datagrid-total-footer {
+  border-bottom: 1px solid #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+}
+.dx-datagrid-borders > .dx-datagrid-headers,
+.dx-datagrid-borders > .dx-datagrid-rowsview,
+.dx-datagrid-borders > .dx-datagrid-total-footer {
+  border-left: 1px solid #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+  border-right: 1px solid #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+}
+.dx-datagrid .dx-row-alt > td,
+.dx-datagrid .dx-row-alt > tr > td {
+  background-color: rgba(2, 180, 204, 0.08) !important; /* #aee7ef secondaryColor.08 */
+  border-top: none !important;
+  border-bottom: none !important;
+}
+.dx-datagrid .dx-row-lines > td {
+  border-bottom: 1px solid #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+}
+.dx-datagrid .dx-group-row > td {
+  border-top: 1px solid #d6f3f7 !important; /* ##aee7ef secondaryColor.32 */
+  border-bottom: 1px solid #d6f3f7 !important; /* ##aee7ef secondaryColor.32 */
+}
+.dx-datagrid .dx-column-lines > td {
+  border-left-color: #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+  border-right-color: #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+}
+.dx-datagrid-rowsview .dx-row.dx-group-row:not(.dx-row-focused) {
+  color: rgba(0, 89, 128, 1) !important; /* #005980 primaryColor */
+  background-color: #aee7ef !important; /* secondaryColor.32 !!attention: it should be solid because the way browser deals with colspan */
+  font-weight: 400 !important;
+}
+.dx-datagrid-group-opened::before,
+.dx-datagrid-group-closed:before {
+  color: rgba(0, 89, 128, 1) !important; /* #005980 primaryColor */
+}
+.dx-datagrid-total-footer {
+  border-top-color: #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+  border-bottom-color: #aee7ef !important; /* ##aee7ef secondaryColor.32 */
+}
+
+/* totals & pagination */
+.dx-datagrid-total-footer,
+.dx-datagrid-total-footer td.dx-command-expand.dx-datagrid-group-space,
+.dx-datagrid-total-footer .dx-datagrid-content-fixed td {
+  background: #d6f3f7 !important; /* secondaryColor.16 */
+}
+.dx-datagrid-total-footer .dx-datagrid-content,
+.dx-datagrid-total-footer .dx-datagrid-content.dx-datagrid-content-fixed {
+  padding: 2px 0 !important;
+}
+.dx-datagrid-summary-item,
+.dx-pages,
+.dx-pages .dx-texteditor-input {
+  color: rgba(0, 89, 128, 1) !important; /* #005980 primaryColor */
+}
+.dx-datagrid-pager {
+  border-top: none !important; /* ##aee7ef secondaryColor.32 */
+}
+.dx-pager .dx-page-sizes .dx-selection,
+.dx-pager .dx-pages .dx-selection {
+  color: rgba(0, 89, 128, 1) !important; /* #005980 primaryColor */
+  background-color: rgba(2, 180, 204, 0.32) !important; /* #aee7ef secondaryColor.32 */
+}
+.dx-page:hover {
+  background-color: rgba(2, 180, 204, 0.08) !important; /* secondaryColor.08 */
+}
+.dx-page.dx-selection:hover {
+  background-color: rgba(2, 180, 204, 1) !important; /* secondaryColor.08 */
+  color: #fff !important;
+}
+
+/*hover & selection*/
+.dx-datagrid-rowsview .dx-row:not(.dx-row-focused):hover > td,
+.dx-datagrid-rowsview .dx-row:not(.dx-row-focused):hover > tr > td {
+  background-color: rgba(2, 180, 204, 0.16) !important; /* secondaryColor.08 */
+  color: rgba(0, 89, 128, 1) !important; /* #005980 primaryColor */
+}
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td,
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > tr > td,
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > td,
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > tr > td {
+  background-color: rgba(2, 180, 204, 0.32) !important; /* secondaryColor.08 */
+  color: rgba(0, 89, 128, 1) !important; /* #005980 primaryColor */
+}
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover:not(.dx-row-lines) > td,
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):not(.dx-row-lines) > td {
+  border-bottom: 1px solid #e6e6e6;
+  border-bottom-color: rgba(2, 180, 204, 0.32) !important;
+  border-top: 1px solid rgba(2, 180, 204, 0.32) !important;
+  border-right-color: #fff !important;
+}
+/* specials */
+.dx-datagrid-drag-header,
+.dx-datagrid-column-chooser .dx-overlay-content .dx-popup-content .dx-column-chooser-item {
+  color: rgba(12, 105, 117, 1) !important;
+  font-weight: 400;
+  border: 1px solid rgba(2, 180, 204, 0.32) !important;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 1px;
+  font-size: 125%;
+}
+.dx-datagrid-columns-separator {
+  background-color: rgba(2, 180, 204, 0.32) !important;
+}
+.dx-datagrid-columns-separator-transparent {
+  background-color: transparent !important;
+}
+
+.dx-datagrid-drop-highlight > td {
+  background-color: rgba(2, 180, 204, 0.16) !important;
+  color: #fff;
+}
+.dx-datagrid-column-chooser.dx-datagrid-column-chooser-mode-drag .dx-popup-content {
+  padding: 20px !important;
+}
+.dx-toolbar-button .dx-button .dx-icon {
+  color: rgba(0, 89, 128, 1) !important; /* #005980 primaryColor */
+}
+.dx-toolbar-item-content,
+.dx-empty-message {
+  color: rgba(2, 180, 204, 1) !important;
+}
+
+/*the overlay-focus for cells */
+.dx-datagrid-focus-overlay,
+.dx-datagrid-filter-range-overlay .dx-overlay-content .dx-texteditor.dx-state-focused::after {
+  border: 2px solid rgba(2, 180, 204, 1) !important; /* #02b4cc secondaryColor */
+  top: -1px !important;
+}
